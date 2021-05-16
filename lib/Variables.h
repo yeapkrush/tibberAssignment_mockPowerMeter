@@ -7,7 +7,7 @@ char ack[6] = {(char)6, '0', 4 +'0', '0', '\r', '\n'};
 
 
 char i0[1] = {0x02};
-char* i1 = "F.F(00)CRLF";
+char* i1 = "F.F(00)\r\n";
 char* i2 = "1.8.0(000052.337*kWh)\r\n";
 char* i3 = "2.8.0(000376.432*kWh)\r\n";
 char* i4 = "3.8.0(000145.875*kvarh)\r\n";
@@ -29,7 +29,7 @@ char* i19 = "16.7(000.00*kW)\r\n";
 char* i20 = "131.7(000.00*kVAr)\r\n";
 char* i21 = "C.5.0(6402)\r\n";
 char* i22 = "C.7.0(0064)\r\n";
-char i23[3] = {21, 0x0D, 0x0A};
+char i23[3] = {0x21, 0x0D, 0x0A};
 char i24[1] = {0x03};
 char i25[1] = {0x08};
 
